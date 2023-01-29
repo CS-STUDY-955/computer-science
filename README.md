@@ -51,3 +51,4 @@
 - https://velog.io/@subinmun1997/CS-Study-%EC%8A%A4%ED%84%B0%EB%94%94-%EC%A3%BC%EC%A0%9C
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner
 - https://github.com/gmlwjd9405/gmlwjd9405.github.io
+- 전공책: https://garden1500.tistory.com/5
