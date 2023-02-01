@@ -57,3 +57,5 @@
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner
 - https://github.com/gmlwjd9405/gmlwjd9405.github.io
 - 전공책: https://garden1500.tistory.com/5
+- https://gyoogle.dev/blog/
+- https://github.com/vsfe/tech-interview
