@@ -8,7 +8,19 @@
 ## DML(Data Manipulation Language)
 - 데이터를 조회, 삽입, 수정, 삭제 하기 위한 명령어
 - SELECT, INSERT, UPDATE, DELETE
+```sql
+SELECT * FROM tableName;
 
+INSERT INTO tableName[(col_name1, col_name2, col_name3,...)]
+VALUES(val1, val2, val3, ...)[, ...];
+
+UPDATE tableName
+SET col1 = val1, ...
+WHERE 조건식;
+
+DELETE [FROM] tableName
+WHERE 조건식;
+```
 ## DCL(Data Control Language)
 - 데이터베이스에 접근하고 객체들을 사용할 권한 부여/회수 명령어
 - GRANT, REVOKE
