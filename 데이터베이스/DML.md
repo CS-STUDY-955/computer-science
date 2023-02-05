@@ -67,7 +67,11 @@ rollback to 복구지점명; -- 복구 지점까지 일부 복구됨
 | RIGHT ('문자열', 개수) |  |
 | REVERSE('문자열') | 문자열을 반대로 나열
 | LENGTH('문자열') | | 
-
+```sql
+SELECT TRIM('_' FROM '___1234___')
+     , TRIM('_#$' FROM '__$1234###')
+     , TRIM('ABC' FROM 'A1234C')
+```
 ## 날짜 관련 함수
 ```SQL
 now(), sysdate() -- 2023-02-02-09:57    
