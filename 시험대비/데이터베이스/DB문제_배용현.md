@@ -77,3 +77,15 @@ from employees
 group by department_id
 having department_id is null;
 ```
+
+## 8. 빈 칸을 채워 'hello, world!'라는 문자열을 만드려고 한다. 빈 칸에 알맞는 함수명을 쓰시오.
+```mysql
+select ___('hello, ssafy!', 8, 5, 'world');
+```
+
+## 9. '2023-02-12 20:38:28'과 같은 형식으로 현재 시간을 출력하려한다. 빈칸에 알맞는 형식을 지정하시오.
+```mysql
+select date_format(now(), "_________");
+```
+
+## 10. 새로운 데이터 삽입시, id가 1씩 증가하도록 auto_increment 제약조건을 걸었다. 이후 데이터를 삭제하면 다음 데이터의 id는 어떻게 생성되는지 설명하시오.
