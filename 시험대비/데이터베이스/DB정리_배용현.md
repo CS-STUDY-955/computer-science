@@ -133,6 +133,8 @@ from employees;
 
 ## DDL
 ### create
+### alter
+### drop
 
 ## DML
 ### insert
@@ -155,3 +157,9 @@ from employees;
 
 ## JDBC
 ### ResultSet
+- Statement 객체로 select 쿼리를 수행한 뒤 얻은 데이터가 저장되는 객체
+- rs.next()로 다음 행에 접근. 다음 행이 존재하면 true, 존재하지 않으면 false를 반환함
+- 첫 행은 스키마를 가리키므로 반드시 rs.next()를 수행해야 함
+- rs.setInt(index, value), rs.setString(index, value) 등으로 치환변수에 값을 설정할 수 있음
+- rs.getInt(index or name), rs.getInt(index or name) 등으로 값을 추출할 수 있음
+- 
