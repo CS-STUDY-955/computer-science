@@ -22,11 +22,14 @@
     - 인증(다양한 리로스에 대한 접근 제어)
     - 로깅(이력 정보를 저장)
 
+---
+
 ## HTTP 요청 구조
 - Request Line
     - HTTP 메서드를 사용해 서버가 수행해야 할 동작을 나타냄
 - Header
 - Body
+<img src="https://velog.velcdn.com/images%2Fgparkkii%2Fpost%2F0a8a066b-b53b-4c86-a522-32e848c5f54f%2FHTTP_Request.png" width= 500>
 
 ## HTTP 응답 구조
 - Status Line
@@ -35,7 +38,7 @@
     - 상태 텍스트(Not Found)
 - Header
 - Body
-
+<img src = "https://velog.velcdn.com/images%2Fgparkkii%2Fpost%2Fc5ee6879-e3af-49f9-a8d0-5922b49c53ce%2FHTTP_Response.png" width= 500>
 
 ## HTTP 요청 메서드
 - CONNECT : 요청한 리소스에 대해 양방향 연결을 시작하는 메서드
@@ -60,6 +63,8 @@
     - HTML 양식을 통해 서버로 전송하며, 서버에 변경사항을 만듦
 
 <img src = "https://raw.githubusercontent.com/Songwonseok/CS-Study/main/Web/images/HTTP-Mehtod-1.JPG" width = 500>
+
+---
 
 ## HTTP응답 상태 코드
 - **1xx (조건부 응답)** 
