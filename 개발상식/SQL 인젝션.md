@@ -7,7 +7,7 @@
 
 <br>
 
-![sql-injection-attack](./img/Example-of-a-SQL-Injection-Attack.png)
+![Example-of-a-SQL-Injection-Attack](https://user-images.githubusercontent.com/68081743/223423269-9dbf7dfb-e4bd-4fb3-a686-70f226793a6c.png)
 
 <br>
 
