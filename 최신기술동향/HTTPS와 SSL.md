@@ -1,13 +1,16 @@
 # HTTPS와 SSL
 ## HTTPS란?
-- HyperText Transfer Protocol Secured
+- HyperText Transfer Protocol over Secure Socket Layer
 - 보안에 대한 관심이 증가하면서 HTTP의 보안을 보완하기 위해 등장
+- 기본 포트가 443 (HTTP는 80)
 - SSL/TLS를 사용함으로써 데이터를 보호받는 HTTP
 - 통신 중 개인 데이터를 탈취하지 못하도록 작동함
 - 사이트 URL 왼쪽에 자물쇠가 표시되면 HTTPS 연결임
-- (자물쇠 있는 사이트 사진, 없는 사이트 사진)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - HTTPS 보안을 갖춘 사이트는 구글 검색엔진 SEO 효과 상승
 - 여러 브라우저는 HTTP/2 업데이트를 지원하면서 반드시 HTTPS를 사용해야함을 명시했고, HTTP/2은 HTTP/1.1보다 유의미하게 빠르기 때문에 대부분의 사이트들이 HTTPS를 사용하는 추세임
+
+<img src="https://user-images.githubusercontent.com/50614241/224991319-bedb006d-12a4-4960-9e9e-36c9e4c6c53c.png" width="600" height="400" />
+<img src="https://user-images.githubusercontent.com/50614241/224991330-b951a4ad-4e33-4dbd-8b2a-2ea0cb4324bb.png" width="600" height="400" />
 
 ## SSL이란?
 - Secure Sockets Layer
@@ -38,12 +41,11 @@
 - RSA 알고리즘: https://yjshin.tistory.com/entry/%EC%95%94%ED%98%B8%ED%95%99-%EB%B9%84%EB%8C%80%EC%B9%AD%ED%82%A4-%EC%95%94%ED%98%B8-RSA-%EC%95%94%ED%98%B8%EC%8B%9C%EC%8A%A4%ED%85%9C
 
 ### 대칭키 알고리즘
-- AES, SHA 등이 대표적이며, 클라이언트와 서버가 악수할 때 무엇을 사용할지 협의함
-- 데이터를 송수신할 때마다 RSA 알고리즘을 사용한다면 엄청난 비용이 소모되므로 
+- AES, SHA 등이 대표적이며, 클라이언트와 서버가 악수할 때 어떤 방식의 알고리즘을 사용할지 협의함
+- 데이터를 송수신할 때마다 RSA 알고리즘을 사용한다면 엄청난 비용이 소모되므로 대칭키 알고리즘을 사용하되, 키를 교환할 때만 RSA알고리즘을 사용한다.
 
 ## SSL 동작 방식
-- https://kanoos-stu.tistory.com/46
-- (위를 그림으로 그려서 추가)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+![SSL](https://user-images.githubusercontent.com/50614241/224991659-33da993d-dc45-49fc-a2b9-33b4a73a3daf.png)
 
 ### 비고
 - https://babbab2.tistory.com/4
