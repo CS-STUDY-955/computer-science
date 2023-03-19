@@ -23,20 +23,24 @@ form 태그는 block 태그이다.
 <!-- test.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <style type=""text/css">
-  @import url(h2-style.css);
-  </style>
-  <style type="text/css">
-  h1 { color: green; }
-  h2 { color: yellow; }
-  </style>
-  <link rel="stylesheet" href="h1-style.css">
-</head>
-<body>
-  <h1>h1 text</h1>
-  <h2>h2 text</h2>
-</body>
+  <head>
+    <style type="text/css">
+      @import url(h2-style.css);
+    </style>
+    <style type="text/css">
+      h1 {
+        color: green;
+      }
+      h2 {
+        color: yellow;
+      }
+    </style>
+    <link rel="stylesheet" href="h1-style.css" />
+  </head>
+  <body>
+    <h1>h1 text</h1>
+    <h2>h2 text</h2>
+  </body>
 </html>
 ```
 
@@ -154,7 +158,7 @@ console.log(!"");
 
 <details>
 <summary>5번</summary>
-<b>3번</b>. 4개<br>
+<b>2번</b>. 4개<br>
 위에서부터 순서대로 true, false, true, true, false, false, true이다.
 비어있는 문자열, null, undefined, 숫자 0, NaN은 false로 간주된다.<br>
 (null은 값이 없거나 비어있음(프로그램 레벨), undefined는 값이 초기화되지 않았음(시스템 레벨)을 의미)<br>
