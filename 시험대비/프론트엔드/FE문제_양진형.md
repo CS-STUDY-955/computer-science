@@ -55,7 +55,7 @@ h2 {
 
 ### <b>3</b>. select 태그를 이용하여 다음과 같은 select box를 만드려고 할 때 빈칸에 들어갈 태그로 옳은 것은?
 
-![q3-select-box](q3-img.JPG)
+![q3-img](https://user-images.githubusercontent.com/68081743/226174266-5274d169-4809-4d9c-84e8-c9452736c8a8.JPG)
 
 ```html
 <!DOCTYPE html>
