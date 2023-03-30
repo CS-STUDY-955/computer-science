@@ -55,15 +55,50 @@ public static void main(String[] args) throws Exception {
 ```
 
 ## 1. IDE Auto Completion
-[자동완성 이미지]
+![auto completion](https://user-images.githubusercontent.com/50614241/228832281-1f1ee7ab-a19d-4efd-9222-e623a56102f7.png)
 
 ## 2. Class.forName()
-[DBUtil 이미지]
+![forName](https://user-images.githubusercontent.com/50614241/228832287-f98d1275-fe42-4d7e-9fd1-163ff5268926.png)
 
 ## 3. Annotation
+```java
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnotation {
+        String value() default "MyAnnotation : default value";
+}
+```
+```java
+class MyObject {
+    @MyAnnotation
+    public void testMethod1() {
+        System.out.println("This is testMethod1");
+  }
 
+    @MyAnnotation(value = "My new Annotation")
+    public void testMethod2() {
+        System.out.println("This is testMethod2");
+  }
+}
+```
+```java
+public class MyMain {
+    public static void main(String[] args) {
+        Method[] methodList = MyObject.class.getMethods();
+
+        for (Method method : methodList) {
+            if(method.isAnnotationPresent(MyAnnotation.class)) {
+                MyAnnotation annotation=method.getDeclaredAnnotation(MyAnnotation.class);
+                String value=annotation.value();
+                System.out.println(method.getName() + ":" + value);
+            }
+        }
+    }
+}
+```
+![result](https://user-images.githubusercontent.com/50614241/228832933-b02312bb-e6f1-48ad-ae08-c51e24fb2fc2.png)
 
 ## 단점
-1. 코드가 지저분해진다.
-2. 추상화가 깨진다.
-3. 컴파일 타임에 최적화를 할 수 없어 성능이 느리다.
+1. 코드가 지저분해진다. -> 유지보수성 저하
+2. 추상화가 깨진다. -> 보안 이슈 발생
+3. 컴파일 타임에 최적화를 할 수 없어 성능 오버헤드가 발생한다.
