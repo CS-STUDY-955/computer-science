@@ -7,7 +7,7 @@
 
 ## SQL vs NoSQL
 
-|        | SQL    | MySQL        |
+|        | SQL    | NoSQL        |
 |--------|--------|--------------|
 | 데이터 단위 | table  | various      |
 | 조인     | 존재     | 존재하지 않음      |
