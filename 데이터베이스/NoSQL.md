@@ -70,10 +70,6 @@
 ## Spring에서 MongoDB를 사용하는 예시 코드
 ```java
 // MongoDB Java Driver를 사용하여 MongoDB 데이터베이스에 접속하는 예시 코드
-
-import com.mongodb.MongoClient;
-import com.mongodb.client.MongoDatabase;
-
 public class MongoDBExample {
 
     public static void main(String[] args) {
@@ -90,11 +86,6 @@ public class MongoDBExample {
 ```
 ```java
 // Spring Data MongoDB를 사용하여 MongoDB 데이터베이스에 데이터를 저장하는 예시 코드
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.stereotype.Component;
-
 @Component
 public class MongoDBExample {
     
