@@ -1,7 +1,5 @@
 # :computer: Computer Science
 
----
-
 ## :loudspeaker: Rule
 
 1. 요일 : 화, 일
